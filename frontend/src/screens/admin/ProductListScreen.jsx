@@ -53,8 +53,11 @@ const ProductListScreen = () => {
           <h1>Products</h1>
         </Col>
         <Col className='text-end'>
-          <Button className='my-3' onClick={createProductHandler}>
-            <FaPlus /> Create Product
+          <Button className='my-3' >
+          <Link to='/admin/product/create' style={{ color: 'white', textDecoration: 'none' }}>
+          <FaPlus /> Create Product
+        </Link>
+          
           </Button>
         </Col>
       </Row>
